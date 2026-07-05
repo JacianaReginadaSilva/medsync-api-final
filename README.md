@@ -84,13 +84,6 @@ DELETE /api/appointments/:id -> Cancelamento definitivo de agendamentos (Protegi
 
 ---
 
-Markdown
----
-
-## 🧪 🧪 Atividade 3: Testes, Qualidade e CI/CD (Garantia de Qualidade)
-
----
-
 ## 🧪 Atividade 3: Testes, Qualidade e CI/CD (Garantia de Qualidade)
 
 Nesta etapa final, o MedSync recebeu uma infraestrutura completa de testes automatizados e integração contínua para garantir a estabilidade das regras de negócio e da interface.

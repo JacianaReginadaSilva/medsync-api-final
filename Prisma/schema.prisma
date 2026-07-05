@@ -1,0 +1,30 @@
+// prisma/schema.prisma
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:senha@localhost:5432/medsync_db?schema=public"
+}
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+model User {
+  id           String        @id @default(uuid())
+  nome         String
+  email        String        @unique
+  senha        String
+  appointments Appointment[]
+  createdAt    DateTime      @default(now())
+}
+
+model Appointment {
+  id            String   @id @default(uuid())
+  medicoName    String
+  especialidade String
+  dataConsulta  DateTime
+  motivo        String
+  userId        String
+  user          User     @relation(fields: [userId], references: [id])
+  createdAt     DateTime @default(now())
+}
