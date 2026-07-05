@@ -1,0 +1,26 @@
+{
+  "name": "medsync-backend",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "API do Sistema MedSync",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "cypress open",
+    "test:ci": "cypress run --component"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.8.0",
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@cypress/code-coverage": "^4.0.3",
+    "@prisma/config": "^7.8.0",
+    "cypress": "^15.18.0",
+    "prisma": "^7.8.0",
+    "typescript": "^5.0.0"
+  }
+}
