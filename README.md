@@ -1,3 +1,12 @@
+## 🚀 Histórico de Evolução e Melhorias Aplicadas (Feedback do Tutor)
+
+Com base nas orientações das entregas anteriores, esta versão final consolidada traz os seguintes aprimoramentos de engenharia:
+* **Correção de Sintaxe (Front-end):** Revisão completa de nomenclatura e estados nos componentes React (padronização de escopo de `import` e consistência em hooks como `setAgendados`).
+* **Exemplos de Contratos JSON (Back-end):** Inclusão de payloads reais de requisição e resposta para facilitar o consumo por equipes de Front-end, agora formalizados via **Swagger/OpenAPI** em `/api-docs`.
+* **Instruções de Ambiente Detalhadas:** Manual passo a passo para configuração de variáveis `.env` e inicialização de migrações do banco relacional com Prisma CLI v7.
+
+---
+
 # 🏥 MedSync - Plataforma de Agendamento Médico Inteligente
 
 O **MedSync** é um ecossistema completo voltado para a otimização e automação de agendamentos de consultas médicas. O projeto nasceu como uma Single Page Application (SPA) responsiva e evoluiu para uma arquitetura moderna, robusta e modularizada, integrando tecnologias de ponta no Front-end e no Back-end.
